@@ -1,4 +1,4 @@
-# 🔐 Pengujian AES-GCM pada Data Transaksi Keuangan
+# Pengujian AES-GCM pada Data Transaksi Keuangan
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![cryptography](https://img.shields.io/badge/library-cryptography-0A7E8C)
@@ -11,7 +11,7 @@ Skrip ini membandingkan **AES-GCM** dengan **AES-CBC** dan **AES-CBC + HMAC-SHA2
 
 ---
 
-## ✨ Apa yang diuji
+## Apa yang diuji
 
 | Skema | Kunci | Autentikasi data | Tambahan ukuran per pesan |
 |---|---|---|---|
@@ -28,7 +28,7 @@ Ada tiga pengujian:
 
 ---
 
-## 📊 Hasil ringkas (data 10 MB)
+##  Hasil ringkas (data 10 MB)
 
 Hasil dari satu run di laptop penulis (lihat bagian Lingkungan pengujian).
 
@@ -47,17 +47,17 @@ Hasil dari satu run di laptop penulis (lihat bagian Lingkungan pengujian).
 | AES-256-CBC | 32 | **968** |
 | AES-256-CBC + HMAC | 1.000 | 0 |
 
-### 🔎 Temuan utama
+###  Temuan utama
 
 - AES-256-GCM sekitar **2,2 kali** lebih cepat daripada AES-256-CBC dan **3,3 kali** lebih cepat daripada CBC + HMAC pada enkripsi 10 MB.
 - AES-CBC tanpa autentikasi **tidak menjamin integritas**: hampir semua data yang diubah diterima begitu saja.
 - Pada GCM, **nonce yang dipakai ulang membocorkan hubungan antar pesan** (XOR ciphertext sama dengan XOR plaintext).
 
-> ⚠️ Angka waktu bergantung pada perangkat keras, pustaka, dan sistem operasi. Jalankan ulang di perangkatmu sendiri sebelum membandingkan.
+>  Angka waktu bergantung pada perangkat keras, pustaka, dan sistem operasi. Jalankan ulang di perangkatmu sendiri sebelum membandingkan.
 
 ---
 
-## 🚀 Cara menjalankan
+##  Cara menjalankan
 
 Kebutuhan: **Python 3.10 atau lebih baru**.
 
@@ -76,7 +76,7 @@ Tips agar hasil lebih stabil: colokkan charger, pilih mode daya performa, dan tu
 
 ---
 
-## 📁 Isi repositori
+##  Isi repositori
 
 ```
 pengujian-aes-gcm/
@@ -87,7 +87,7 @@ pengujian-aes-gcm/
 
 ---
 
-## ⚙️ Cara kerja pengujian
+##  Cara kerja pengujian
 
 - **Data uji:** transaksi **sintetis** berformat JSON per baris (ID transaksi, rekening asal, rekening tujuan, nominal, mata uang). Data dibuat dengan *seed* tetap (`2026`), sehingga isinya sama setiap kali skrip dijalankan. Tidak ada data nyata yang dipakai.
 - **Kunci dan nonce:** kunci dibuat acak dengan `os.urandom` setiap run. Pada GCM, nonce 96-bit dibuat acak untuk setiap pesan dengan AAD berupa teks `hdr`. Pada CBC, IV 128-bit dibuat acak dengan padding PKCS#7.
@@ -97,7 +97,7 @@ pengujian-aes-gcm/
 
 ---
 
-## 💻 Lingkungan pengujian
+##  Lingkungan pengujian
 
 | Komponen | Nilai |
 |---|---|
@@ -109,7 +109,7 @@ pengujian-aes-gcm/
 
 ---
 
-## ⚠️ Catatan penting
+##  Catatan penting
 
 - Skrip ini dibuat untuk **keperluan riset dan pembelajaran**, bukan untuk dipakai langsung di sistem produksi. Sistem nyata memerlukan manajemen kunci dan manajemen nonce yang tidak dicakup di sini.
 - Pengukuran dilakukan di memori, tanpa jaringan atau penyimpanan, pada satu perangkat. Hasilnya tidak dapat digeneralisasi ke perangkat lain.
@@ -117,7 +117,7 @@ pengujian-aes-gcm/
 
 ---
 
-## 📖 Sitasi
+##  Sitasi
 
 Jika kamu memakai skrip ini, sebutkan jurnal terkait:
 
@@ -125,7 +125,7 @@ Jika kamu memakai skrip ini, sebutkan jurnal terkait:
 
 ---
 
-## 👥 Penulis
+##  Penulis
 
 Rifqi Alvanzo Atthallah, Dio Tri Firnanda, Muhammad Partua Langka Situmeang, Arif Maulana, Afra Dhiya Lisara, dan Muhammad Ramadhana Aryandi
 Universitas Malikussaleh, Indonesia

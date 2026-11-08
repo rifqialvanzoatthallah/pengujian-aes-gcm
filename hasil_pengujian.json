@@ -1,0 +1,202 @@
+{
+  "kinerja": [
+    {
+      "ukuran": "1 KB",
+      "skema": "AES-128-GCM",
+      "enkripsi_ms": 0.0034,
+      "dekripsi_ms": 0.0035,
+      "enkripsi_MBps": 287.2,
+      "dekripsi_MBps": 279.0,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "1 KB",
+      "skema": "AES-256-GCM",
+      "enkripsi_ms": 0.003,
+      "dekripsi_ms": 0.0031,
+      "enkripsi_MBps": 325.5,
+      "dekripsi_MBps": 315.0,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "1 KB",
+      "skema": "AES-256-CBC",
+      "enkripsi_ms": 0.0068,
+      "dekripsi_ms": 0.0063,
+      "enkripsi_MBps": 143.6,
+      "dekripsi_MBps": 155.0,
+      "overhead_byte": 32
+    },
+    {
+      "ukuran": "1 KB",
+      "skema": "AES-256-CBC+HMAC",
+      "enkripsi_ms": 0.0102,
+      "dekripsi_ms": 0.0096,
+      "enkripsi_MBps": 95.7,
+      "dekripsi_MBps": 101.7,
+      "overhead_byte": 64
+    },
+    {
+      "ukuran": "10 KB",
+      "skema": "AES-128-GCM",
+      "enkripsi_ms": 0.0046,
+      "dekripsi_ms": 0.0046,
+      "enkripsi_MBps": 2122.9,
+      "dekripsi_MBps": 2122.9,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "10 KB",
+      "skema": "AES-256-GCM",
+      "enkripsi_ms": 0.0047,
+      "dekripsi_ms": 0.0048,
+      "enkripsi_MBps": 2077.8,
+      "dekripsi_MBps": 2034.6,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "10 KB",
+      "skema": "AES-256-CBC",
+      "enkripsi_ms": 0.0133,
+      "dekripsi_ms": 0.0077,
+      "enkripsi_MBps": 734.3,
+      "dekripsi_MBps": 1268.2,
+      "overhead_byte": 32
+    },
+    {
+      "ukuran": "10 KB",
+      "skema": "AES-256-CBC+HMAC",
+      "enkripsi_ms": 0.022,
+      "dekripsi_ms": 0.0162,
+      "enkripsi_MBps": 443.9,
+      "dekripsi_MBps": 602.8,
+      "overhead_byte": 64
+    },
+    {
+      "ukuran": "100 KB",
+      "skema": "AES-128-GCM",
+      "enkripsi_ms": 0.0181,
+      "dekripsi_ms": 0.0179,
+      "enkripsi_MBps": 5395.4,
+      "dekripsi_MBps": 5455.7,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "100 KB",
+      "skema": "AES-256-GCM",
+      "enkripsi_ms": 0.0201,
+      "dekripsi_ms": 0.0199,
+      "enkripsi_MBps": 4858.5,
+      "dekripsi_MBps": 4907.3,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "100 KB",
+      "skema": "AES-256-CBC",
+      "enkripsi_ms": 0.1705,
+      "dekripsi_ms": 0.1179,
+      "enkripsi_MBps": 572.8,
+      "dekripsi_MBps": 827.9,
+      "overhead_byte": 32
+    },
+    {
+      "ukuran": "100 KB",
+      "skema": "AES-256-CBC+HMAC",
+      "enkripsi_ms": 0.2233,
+      "dekripsi_ms": 0.1957,
+      "enkripsi_MBps": 437.4,
+      "dekripsi_MBps": 499.0,
+      "overhead_byte": 64
+    },
+    {
+      "ukuran": "1 MB",
+      "skema": "AES-128-GCM",
+      "enkripsi_ms": 0.6881,
+      "dekripsi_ms": 0.6882,
+      "enkripsi_MBps": 1453.4,
+      "dekripsi_MBps": 1453.1,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "1 MB",
+      "skema": "AES-256-GCM",
+      "enkripsi_ms": 0.7062,
+      "dekripsi_ms": 0.7108,
+      "enkripsi_MBps": 1416.0,
+      "dekripsi_MBps": 1406.8,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "1 MB",
+      "skema": "AES-256-CBC",
+      "enkripsi_ms": 1.7579,
+      "dekripsi_ms": 1.4902,
+      "enkripsi_MBps": 568.9,
+      "dekripsi_MBps": 671.1,
+      "overhead_byte": 32
+    },
+    {
+      "ukuran": "1 MB",
+      "skema": "AES-256-CBC+HMAC",
+      "enkripsi_ms": 2.5211,
+      "dekripsi_ms": 2.3828,
+      "enkripsi_MBps": 396.7,
+      "dekripsi_MBps": 419.7,
+      "overhead_byte": 64
+    },
+    {
+      "ukuran": "10 MB",
+      "skema": "AES-128-GCM",
+      "enkripsi_ms": 7.7753,
+      "dekripsi_ms": 7.7195,
+      "enkripsi_MBps": 1286.1,
+      "dekripsi_MBps": 1295.4,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "10 MB",
+      "skema": "AES-256-GCM",
+      "enkripsi_ms": 7.6227,
+      "dekripsi_ms": 7.7946,
+      "enkripsi_MBps": 1311.9,
+      "dekripsi_MBps": 1282.9,
+      "overhead_byte": 28
+    },
+    {
+      "ukuran": "10 MB",
+      "skema": "AES-256-CBC",
+      "enkripsi_ms": 16.7921,
+      "dekripsi_ms": 14.1466,
+      "enkripsi_MBps": 595.5,
+      "dekripsi_MBps": 706.9,
+      "overhead_byte": 32
+    },
+    {
+      "ukuran": "10 MB",
+      "skema": "AES-256-CBC+HMAC",
+      "enkripsi_ms": 25.2873,
+      "dekripsi_ms": 23.0068,
+      "enkripsi_MBps": 395.5,
+      "dekripsi_MBps": 434.7,
+      "overhead_byte": 64
+    }
+  ],
+  "integritas": {
+    "AES-256-GCM": {
+      "percobaan": 1000,
+      "terdeteksi": 1000,
+      "data_rusak_diterima": 0
+    },
+    "AES-256-CBC": {
+      "percobaan": 1000,
+      "terdeteksi": 32,
+      "data_rusak_diterima": 968
+    },
+    "AES-256-CBC+HMAC": {
+      "percobaan": 1000,
+      "terdeteksi": 1000,
+      "data_rusak_diterima": 0
+    }
+  },
+  "nonce_ulang_bocor": true
+}
